@@ -1,0 +1,15 @@
+{{$scratch := newScratch}}
+{{ range (where .Site.Pages "Kind" "page" )}}
+{{$scratch.Add "total words" .WordCount}}
+{{ end }}
+
+<footer class="footer">
+    <div class="copyright">
+        © 2020 Copyright Information.
+        <br>{{ len (where .Site.RegularPages "Section" "posts") }} articles. 
+        {{$scratch.Get "total words" }} words total.
+    </div>
+    <div class="footer_slogan">
+        <span>{{ .Site.Params.footerSlogan }}</span>
+    </div>
+</footer>

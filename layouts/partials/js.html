@@ -1,0 +1,36 @@
+<script src="{{ "js/jquery-3.5.1.min.js" | absURL }}"></script>
+<link href="{{ "css/fancybox.min.css" | absURL }}" rel="stylesheet">
+<script src="{{ "js/fancybox.min.js" | absURL }}"></script>
+<script src="{{ "js/zozomod.js" | absURL }}"></script>
+
+{{ if .Site.Params.enableMathJax }}
+{{ partial "mathjax.html" . }}
+{{ end }}
+
+<!-- KaTeX Source from: hugo-theme-jane -->
+<!-- KaTeX -->
+{{- if and (or .Params.katex (and .Site.Params.katex (ne .Params.katex false))) (or .IsPage .IsHome) }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"
+  integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js"
+  integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);">
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      // ...options...
+    });
+  });
+</script>
+{{- end }}
+<!-- End -->
+
+
+{{ template "_internal/google_analytics_async.html" . }}
