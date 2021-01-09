@@ -6,25 +6,20 @@ A Hugo theme based on [Zozo](https://github.com/varkai/hugo-theme-zozo). Zozo is
 
 ## Features
 
-**Zozo Features**
-
 - Responsive
-- Syntax highlighting with highlightjs
-- Math with mathjax
-- Social links
-- Tags page
+- Syntax highlighting
+- Math with MathJax and [Katex (referenced from Hugo theme Jane)](https://github.com/xianmin/hugo-theme-jane/blob/68e0de4273df61045f5a6edd5ecd5a1703e32cf9/layouts/partials/scripts.html)
+- Social media links
+- Tags page and Categories page
 - Archive page
 - Disqus and [Valine](https://valine.js.org/en/index.html) comment-system
 - Fancybox
 - GoogleAnalytics
 
-**ZozoMod Added Features**
+## Designs
 
-- Katex [(referenced from Hugo theme Jane)](https://github.com/xianmin/hugo-theme-jane/blob/68e0de4273df61045f5a6edd5ecd5a1703e32cf9/layouts/partials/scripts.html)
-- Categories page
-- Pagination for single posts and archive page
-- Displays the content of archetype `description` as post summary
-- Prepends `description` content to actual post content
+- Paginations for index page, post single pages, and archive page
+- Displays front matter `description` as post summary, prepends `description` content to post content
 
 ## Installation
 
