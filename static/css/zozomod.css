@@ -134,6 +134,7 @@ hr {
   padding: 30px 0 140px 0;
   margin: 0 auto;
   background-size: cover;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 .header .site_title_container {
@@ -165,14 +166,6 @@ hr {
 
 .header .site_title_container .site_title a:hover {
   color: #666666;
-}
-
-.header .site_title_container .site_title .date {
-  letter-spacing: 0px;
-  color: rgba(0, 0, 0, 0.44);
-  font-size: 12px;
-  font-weight: normal;
-  margin-top: 20px;
 }
 
 .header .site_title_container .description {
@@ -211,7 +204,7 @@ hr {
 
 .post {
   background-color: #ffffff;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .post .post_title h2 {
@@ -272,7 +265,8 @@ hr {
 
 .post .post_content .boxCN {
   margin: 0 2em 20px 2em;
-  font-family: "KaiTi", "Source Han Sans SC";
+  font-family: adobe-kaiti-std, sans-serif;
+  font-style: normal;
 }
 
 .post .post_footer {
@@ -311,7 +305,7 @@ hr {
 
 .page_tags {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .page_tags ul li {
@@ -398,12 +392,13 @@ hr {
   padding: 0;
 }
 
-.list_with_title .page_title {
+.list_page_title {
+  letter-spacing: 1px;
   font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 600;
   color: #1f1f1f;
-  font-weight: bold;
-  padding: 40px 0 50px 0;
-  line-height: 2.2em;
+  padding: 30px 0 60px 0;
 }
 
 .list_with_title li {
@@ -420,7 +415,7 @@ hr {
 }
 
 .list_with_title .listing {
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   line-height: 2.1;
 }
@@ -447,7 +442,7 @@ hr {
 
 .pagination {
   padding: 30px 0 60px 0;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f3f3f3;
   color: #666666;
   font-size: 14px;
 }
@@ -493,6 +488,7 @@ hr {
 .pageturn a:hover {
   color: #333333;
 }
+
 
 .markdown {
   line-height: 1.8em;
@@ -687,6 +683,9 @@ a.back_to_top:hover span {
   }
   .nav_container .site_nav li {
     float: none;
+  }
+  .nav_container .site_nav .site_title {
+    display: none;
   }
   .nav_container .menu_icon {
     position: fixed;

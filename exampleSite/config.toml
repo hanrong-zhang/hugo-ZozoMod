@@ -55,6 +55,14 @@ pygmentscodefencesguesssyntax = true
   enableSummary = true
   mainSections = ["posts","post"]
   
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[permalinks]
+  posts = "/:year/:month/:day/:title/"
+
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org

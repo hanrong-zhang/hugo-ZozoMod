@@ -1,9 +1,11 @@
 {{ partial "head.html" . }}
 
 <body>
+
+
     <div class="main animate__animated animate__fadeInDown">
         {{ partial "nav.html" . }}
-        {{ partial "header.html" . }}
+
         <div class="content">
             <div class="post_page">
                 <div class="post animate__animated animate__fadeInDown">
@@ -19,7 +21,7 @@
                     </div>
                     <hr>
                     {{ end }}
-                    
+
                     <div class="post_content markdown">
                         {{ .Content }}
                     </div>
@@ -66,7 +68,9 @@
                 {{ end }}
             </div>
         </div>
+
     </div>
+
     <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
     {{ partial "footer.html" . }}
     {{ partial "js.html" . }}

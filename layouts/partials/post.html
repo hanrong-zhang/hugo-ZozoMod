@@ -10,7 +10,7 @@
             {{ with .Description }}
             {{ (markdownify .) }}
             {{ else }}
-                <p>{{ .Summary }}......</p>
+                {{ .Summary }}......
             {{ end }}
         </div>
     </div>
@@ -53,4 +53,5 @@
     </a>
     {{ end }}
     {{ end }}
+
 </div>

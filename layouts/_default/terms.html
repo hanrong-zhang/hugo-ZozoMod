@@ -3,8 +3,9 @@
 <body>
     <div class="main animate__animated animate__fadeInDown">
         {{ partial "nav.html" . }}
-        {{ partial "header.html" . }}
         <div class="content">
+            <div class="list_page_title"><a href='{{ .RelPermalink }}'>{{ .Page.Title }}</a></div>
+
             <div class="page_tags">
                 <ul>
                     {{ $data := .Data }}
