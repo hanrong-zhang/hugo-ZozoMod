@@ -51,7 +51,8 @@ pygmentscodefencesguesssyntax = true
   footerSlogan = "My spiritual home"
   keywords = ["Hugo","theme","ZozoMod"]
   description = "Hugo theme ZozoMod example site."
-  enableMathJax = true
+  enableMathJax = false
+  enableKaTeX = true
   enableSummary = true
   mainSections = ["posts","post"]
   

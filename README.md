@@ -2,13 +2,15 @@
 
 [![GitHub](https://img.shields.io/github/license/hanrong-zhang/hugo-ZozoMod.svg?color=4664DA&style=flat-square)](https://github.com/hanrong-zhang/hugo-ZozoMod/blob/master/LICENSE)
 
-A Hugo theme based on [Zozo](https://github.com/varkai/hugo-theme-zozo). Zozo is a port of [Aragaki](https://github.com/PCDotFan/Aragaki), style referenced from [菩提树下](https://blog.caicai.me/), and some functions referenced from [Even](https://github.com/olOwOlo/hugo-theme-even).
+A Hugo blog theme based on [Zozo](https://github.com/varkai/hugo-theme-zozo). Zozo is a port of [Aragaki](https://github.com/PCDotFan/Aragaki), which includes style referenced from [菩提树下](https://blog.caicai.me/) and some functions referenced from [Even](https://github.com/olOwOlo/hugo-theme-even).
+
+**[Demo](https://zozo-mod.web.app)**
 
 ## Features
 
 - Responsive
-- Syntax highlighting
-- Math with MathJax and [Katex (referenced from Hugo theme Jane)](https://github.com/xianmin/hugo-theme-jane/blob/68e0de4273df61045f5a6edd5ecd5a1703e32cf9/layouts/partials/scripts.html)
+- Syntax highlighting with highlightjs
+- Math with MathJax and KaTeX
 - Social media links
 - Tags page and Categories page
 - Archive page
@@ -51,6 +53,10 @@ This theme provides `img` shortcodes.
 {{< img src="path/to/xxx.png" >}}
 ```
 
+## MathJax and KaTeX
+
+This theme supports MathJax and KaTeX. By default, it uses KaTeX and MathJax is turned off. You can change it in `config.toml`. Under `[params]`, set `enableMathJax` and `enableKaTeX` to support desired math typesetting.
+
 ## License
 
 This theme is released under [MIT](https://github.com/hanrong-zhang/hugo-ZozoMod/blob/master/LICENSE) License.
@@ -61,3 +67,4 @@ This theme is released under [MIT](https://github.com/hanrong-zhang/hugo-ZozoMod
 - [Aragaki](https://github.com/PCDotFan/Aragaki)
 - [菩提树下](https://blog.caicai.me/)
 - [olOwOlo](https://olowolo.com/)
+- [Hugo theme Jane (`katex.html` reference)](https://github.com/xianmin/hugo-theme-jane/blob/68e0de4273df61045f5a6edd5ecd5a1703e32cf9/layouts/partials/scripts.html))
