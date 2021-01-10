@@ -10,7 +10,7 @@ A Hugo blog theme based on [Zozo](https://github.com/varkai/hugo-theme-zozo). Zo
 
 - Responsive
 - Syntax highlighting with highlightjs
-- Math with MathJax and KaTeX
+- MathJax and KaTeX
 - Social media links
 - Tags page and Categories page
 - Archive page
@@ -53,9 +53,9 @@ This theme provides `img` shortcodes.
 {{< img src="path/to/xxx.png" >}}
 ```
 
-## MathJax and KaTeX
+## Math Typesetting
 
-This theme supports MathJax and KaTeX. By default, it uses KaTeX and MathJax is turned off. You can change it in `config.toml`. Under `[params]`, set `enableMathJax` and `enableKaTeX` to support desired math typesetting.
+This theme supports MathJax and KaTeX. By default, it uses KaTeX and MathJax is turned off. You can change your preference in `config.toml`. Under `[params]`, set `enableMathJax` and `enableKaTeX` to support desired math typesetting.
 
 ## License
 
@@ -67,4 +67,5 @@ This theme is released under [MIT](https://github.com/hanrong-zhang/hugo-ZozoMod
 - [Aragaki](https://github.com/PCDotFan/Aragaki)
 - [菩提树下](https://blog.caicai.me/)
 - [olOwOlo](https://olowolo.com/)
-- [Hugo theme Jane (`katex.html` reference)](https://github.com/xianmin/hugo-theme-jane/blob/68e0de4273df61045f5a6edd5ecd5a1703e32cf9/layouts/partials/scripts.html))
+- [Hugo theme Jane (KaTeX reference)](https://github.com/xianmin/hugo-theme-jane/blob/68e0de4273df61045f5a6edd5ecd5a1703e32cf9/layouts/partials/scripts.html)
+
